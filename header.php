@@ -11,6 +11,18 @@
   <title><?php bloginfo('name'); ?></title>
   <meta name="description" content="<?php bloginfo('description') ?>">
   <link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri()) . '/assets/images/common/icon.png' ?>">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?php echo home_url(); ?>">
+  <meta property="og:title" content="<?php echo bloginfo('title') ?>">
+  <meta property="og:description" content="<?php echo bloginfo('description') ?>">
+  <meta property="og:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/common/ogp.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="<?php echo home_url(); ?>">
+  <meta property="twitter:title" content="<?php echo bloginfo('title') ?>">
+  <meta property="twitter:description" content="<?php echo bloginfo('description') ?>">
+  <meta property="twitter:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/common/ogp.png">
 </head>
 
 
