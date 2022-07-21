@@ -1,0 +1,38 @@
+@use "setting" as *;
+
+.p-header {
+  background-color: $color-header-background;
+}
+
+.p-header__inner {
+  @include flexVerticalCenter();
+  padding: 0 $padding-sp;
+  @include mq("md") {
+    padding: 0 $padding-pc;
+  }
+}
+
+.p-header__logo,
+.p-header__logo a {
+  @include flexVerticalCenter();
+}
+
+.p-header__logo a:hover {
+  opacity: 0.7;
+}
+
+.p-header__gnav {
+  display: none;
+  @include mq("md") {
+    @include flexVerticalCenter();
+    margin-left: auto;
+  }
+}
+
+.p-header__hamburger {
+  margin-left: auto;
+  z-index: map-get($layer, "header-menu");
+  @include mq("md") {
+    display: none;
+  }
+}

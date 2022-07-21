@@ -1,0 +1,23 @@
+@use "setting" as *;
+
+.c-message-box {
+  padding: rem(32);
+  background-color: $grey;
+  border-radius: 30px;
+  @include mq("md") {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.c-message-box p:not(:first-child) {
+  margin-top: rem(16);
+}
+
+.c-message-box h3:not(:first-child) {
+  margin-top: rem(70);
+}
+
+.c-message-box ul {
+  margin-top: rem(20);
+}

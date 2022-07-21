@@ -1,0 +1,28 @@
+@use "setting" as *;
+
+.c-menu-line  {
+  display: block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: rem(25);
+    left: 0;
+    width: 100%;
+    height: rem(2);
+    background: $color-menu-line;
+    transition: all $transition;
+    transform: scale(0, 1);
+    transform-origin: center top;
+  }
+
+  &:hover::after {
+    transform: scale(1, 1);
+  }
+}
+
+.c-menu-line:hover {
+  color: $pink;
+  transition: color $transition;
+}

@@ -1,0 +1,14 @@
+@use "setting" as *;
+
+.p-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: rem(50);
+  row-gap: rem(100);
+  max-width: 300px;
+  margin: auto;
+  @include mq("md") {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

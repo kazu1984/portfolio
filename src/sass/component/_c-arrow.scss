@@ -1,0 +1,22 @@
+@use "setting" as *;
+
+.c-arrow {
+  position: relative;
+  display: inline-block;
+  width: rem(30);
+  height: rem(30);
+  background-color: $pink;
+  border-radius: 50%;
+}
+
+.c-arrow::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  border-top: solid 2px white;
+  border-right: solid 2px white;
+  width: rem(10);
+  height: rem(10);
+  transform: rotate(45deg);
+}

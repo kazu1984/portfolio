@@ -1,0 +1,11 @@
+@use "setting" as *;
+
+.c-link {
+  text-decoration: underline;
+  transition: color $transition;
+  cursor: pointer;
+}
+
+.c-link:hover {
+  color: $primary-color;
+}

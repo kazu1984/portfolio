@@ -1,0 +1,38 @@
+@use "setting" as *;
+
+.p-card {
+  box-shadow: 1px 4px 19px -6px #d7d6d6;
+  border-radius: 16px;
+}
+
+.p-card:hover .p-card__img img {
+  transform: scale(1.1);
+}
+
+.p-card:hover .p-card__title {
+  color: $primary-color;
+}
+
+.p-card > *:not(:first-child) {
+  padding: rem(5) rem(10);
+}
+
+.p-card__img {
+  overflow: hidden;
+}
+
+.p-card__img img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  transition: transform $transition ease;
+}
+
+.p-card__title {
+  margin-top: rem(32);
+  transition: color $transition;
+}
+
+.p-card__button {
+  text-align: right;
+}

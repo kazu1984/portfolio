@@ -1,0 +1,32 @@
+@use "setting" as *;
+
+.p-mv {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/common/mv.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.p-mv__inner {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 0.05em;
+}
+
+.p-mv__title {
+  font-size: rem(22);
+  font-weight: $bold;
+  text-transform: uppercase;
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.p-mv__link {
+  margin-top: rem(40);
+}

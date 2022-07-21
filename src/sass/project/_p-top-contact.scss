@@ -1,0 +1,14 @@
+@use "setting" as *;
+
+.p-top-contact__text {
+  text-align: center;
+}
+
+.p-top-contact__text + .p-top-contact__text {
+  margin-top: rem(15);
+}
+
+.p-top-contact__form {
+  margin-top: rem(80);
+  max-width: rem(800);
+}

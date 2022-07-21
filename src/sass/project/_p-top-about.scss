@@ -1,0 +1,34 @@
+@use "setting" as *;
+
+.p-top-about__img {
+  width: 90%;
+  margin: auto;
+  @include mq("md") {
+    width: rem(390)
+  }
+}
+
+.p-top-about__img img {
+  width: 100%;
+  border-radius: 35px;
+  aspect-ratio: 154 / 108;
+}
+
+.p-top-about__profile {
+  margin-top: rem(48);
+  text-align: center;
+}
+
+.p-top-about__name {
+  font-size: rem(20);
+  font-weight: $bold;
+}
+
+.p-top-about__area {
+  margin-top: rem(8);
+}
+
+.p-top-about__message {
+  margin-top: rem(123);
+  max-width: rem(800);
+}

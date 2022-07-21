@@ -1,0 +1,8 @@
+@use "setting" as *;
+
+.c-lv3-heading {
+  font-size: rem(18);
+  font-weight: $medium;
+  padding-left: rem(10);
+  border-left: rem(3) solid $pink;
+}

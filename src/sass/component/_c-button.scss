@@ -1,0 +1,12 @@
+@use "setting" as *;
+
+.c-button {
+  display: inline-block;
+  color: $color-base-font-sub;
+  background-color: $color-menu-circle;
+  border-radius: 30px;
+}
+
+.c-button:hover {
+  opacity: .7;
+}
