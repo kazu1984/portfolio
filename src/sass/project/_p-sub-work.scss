@@ -14,6 +14,7 @@
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
+  object-fit: contain;
 }
 
 .p-sub-work__title {
@@ -55,7 +56,7 @@
 
 .p-sub-work__info-text {
   @include mq("md") {
-    width: 70%;
+    width: 85%;
   }
 }
 

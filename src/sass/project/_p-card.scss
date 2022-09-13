@@ -26,6 +26,7 @@
   height: auto;
   aspect-ratio: 4 / 3;
   transition: transform $transition ease;
+  object-fit: contain;
 }
 
 .p-card__title {

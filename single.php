@@ -11,18 +11,18 @@
         <?php the_content(); ?>
       </div>
       <dl class="p-sub-work__info">
-        <dt class="p-sub-work__info-title">URL</dt>
+        <dt class="p-sub-work__info-title">[URL]</dt>
         <dd class="p-sub-work__info-text">
           <a href="<?php echo get_field('url'); ?>" class="c-link"><?php the_field('url'); ?></a>
         </dd>
-        <dt class="p-sub-work__info-title">Basic認証ID</dt>
+        <dt class="p-sub-work__info-title">[Basic認証ID]</dt>
         <dd class="p-sub-work__info-text"><?php the_field('id'); ?></dd>
-        <dt class="p-sub-work__info-title">Basic認証PASS</dt>
+        <dt class="p-sub-work__info-title">[Basic認証PASS]</dt>
         <dd class="p-sub-work__info-text"><?php the_field('password'); ?></dd>
         <div class="p-sub-work__info-space"></div>
-        <dt class="p-sub-work__info-title">製作期間</dt>
+        <dt class="p-sub-work__info-title">[製作期間]</dt>
         <dd class="p-sub-work__info-text"><?php the_field('create_time'); ?></dd>
-        <dt class="p-sub-work__info-title">ソースコード</dt>
+        <dt class="p-sub-work__info-title">[ソースコード]</dt>
         <dd class="p-sub-work__info-text">
           <a href="<?php echo get_field('source'); ?>" class="c-link"><?php the_field('source'); ?></a>
         </dd>
